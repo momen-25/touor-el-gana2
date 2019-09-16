@@ -1,0 +1,87 @@
+<template name="admin">
+
+ <form id="kidSc" style="text-align: center;" >
+ 	<div><label style="margin-bottom: 20px;margin-left: 175px;">اسم الطفل </label></div>
+ 	<input type="search" id="name-of-kd" name="">
+ 	<button type="submit" > ابحث </button>
+
+ </form>
+	
+</template>
+<template name="kidInfo">
+<div class="container" style="text-align: right;">
+<div>
+	{{#each kidNm}}
+
+	<div><a href="/kidInfo/{{_id}}">{{name}}</a></div>
+
+	
+	{{/each}}
+</div>
+</div>
+</template>
+
+<template name="kidInfoTheDay">
+<div class="container" style="text-align: right;">
+<div>
+	{{#if date}}
+	     <div>{{dt}}</div>
+
+    {{else}}
+    <div>kj;j;j</div>
+   
+	
+	{{/if}}
+</div>
+</div>
+</template>
+
+
+
+<template name="kidInfoTheData">
+<div class="container" style="text-align: right;">
+<div>
+	{{#with kidData}}
+
+     <h1> {{name}}</h1>
+     <a href="#"> <span>عرض المزيد</span></a>
+     {{#with pay}}
+
+
+     <div> المتبقي {{payLeft}} </div>
+     <div> المدفوع {{payNow}}</div>
+     <form class="re-pay">
+   	 <input type="number" name="" class="rePay">
+   	 <button type="submit" class="money-save">save</button>
+     </form>
+
+
+
+
+     {{else}}
+     <form class="money-save">
+     	<label style="display: block;">المبلغ المدفوع الان</label>
+
+     	<input type="number" name="" class="payNow">
+     	<div style="margin-top: 25px">
+     	 <label>فرع المثلث</label><input type="checkbox" class="reg" value="1">
+     	 <label> فرع طريق بلقاس </label><input type="checkbox" class="reg" value="2">
+     	 <label>فرع حي الجامعه </label><input type="checkbox" class="reg" value="3">
+     	 <div style="margin: 20px 0px ;">
+      	  <label >اشتراك الباص </label><input type="checkbox" class="bus" checked>
+    	 </div>
+     	 <div style="margin: 20px 0px ;">
+      	  <label > الزي الموحد </label><input type="checkbox" class="form" checked>
+    	 </div>    	 
+     	</div>
+     	<button type="submit" class="money-save">save</button>
+     </form>     
+
+     {{/with}}
+
+
+	
+	{{/with}}
+</div>
+</div>
+</template>

@@ -1,0 +1,46 @@
+<template name='image'>
+    <div style="float: left; position: fixed;left:100px;display: inline-flex;" class="nextPic js-save">
+    <div style="display: inline;margin-top: 190px;font-size: 40px;text-align: right;color: #007bff">التالي</div>
+    <a href="/" type="button"> <span style="font-size: 280px; margin-left: 3px;"> <i class="fa fa-angle-double-left"></i></span> </a>
+  </div>
+ <div class="container" >
+
+
+{{#if currentUser}}
+
+
+<div class="row">  
+
+  
+<div class="col-md-4 upImg" style="margin: auto;margin-top: 100px">
+
+  <!-- profile -->
+  
+
+
+      <img src="../765-default-avatar.png" class="profile-img" width="100%" sizes="150px">
+      <form class="edit-profile" enctype="multipart/form-data">
+        <label for="profileImage">Choose Profile Image</label>
+        <br>
+        <span class="btn btn-default btn-file span">
+            Browse <input type="file" name="profileImage" id="profileImage" class="black profileImage">
+         </span>      
+        <br>
+        <button type="submit" value="Upload Photo" id="profile-btn" class="btn btn-sml btn-primary">Upload Photo</button>
+      </form>
+
+  
+
+
+        
+
+</div>
+
+
+ </div> 
+
+
+  {{/if}}  
+</div> 
+
+</template>

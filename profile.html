@@ -1,0 +1,82 @@
+<template name="profile">
+
+{{> profilepic}}
+{{> kidData}}
+
+  
+
+</template>
+
+
+<template name="profilepic">
+  <div class="container">
+  <div class="row" style="margin-top: 100px">
+    {{#if ph}}
+    <div class="col-md-5" style="margin: auto;">
+  <div class="pro-img" style="height: 300px; width: 300px; margin: auto;">
+    <img src="{{image}}" alt="..." width="100%" height="100%" style="border-radius: 50%;border: 6px #EEEEEE solid;margin: auto;">
+  </div>
+    </div>
+    {{/if}}
+  </div>
+ </div>
+  
+</template>
+
+<template name = 'kidData'>
+  
+
+   <div class="container" >
+
+    {{#if kid}}
+    <div class="row">
+      <div class="col-md-5" style="margin: auto;padding-top:11px">
+
+            <h2 style="margin: auto;text-align: center;text-shadow: 2px 3px 0px #EEE;font-family: serif;font-weight: bolder;color: #E5165E">{{name}}</h2>
+
+      </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+
+      <div class="col-md-6">
+        <h2 style="text-align: right;text-shadow: 2px 3px 0px #EEE;font-family: serif;font-weight: bolder;color: #E5165E"> معلومات أساسية</h2>
+        <div class="bais-info" >
+          <div class="sec-info"> الأسم كامل <span style="margin-right: 100px;color: #F4A11F">{{name}}</span> </div>
+          <div class="sec-info"> النوع <span style="margin-right: 201px;color: #F4A11F">{{gen}}</span></div>
+          <div class="sec-info"> رقم الهاتف <span style="margin-right: 100px;color: #F4A11F">{{phoneNumber}}</span></div>
+          <div class="sec-info"> المرحله العمريه <span style="margin-right: 100px;color: #F4A11F">{{state}}</span></div>
+
+
+        </div>
+
+
+
+        
+      </div>
+
+  
+
+      <div class="col-md-6" style="border-right: 3px solid #EEEEEE;">
+          <h2 style="text-align: right;text-shadow: 2px 3px 0px #EEE;font-family: serif;font-weight: bolder;color: #E5165E"> الأب</h2>
+          <div class="bais-info" style="text-align: right;font-size: 26px ;padding: 27px 33px;font-family: 'mada';font-weight: bold;color: #45C3D2">
+            {{fJ}}
+
+          </div>
+
+          <h2 style="text-align: right;text-shadow: 2px 3px 0px #EEE;font-family: serif;font-weight: bolder;color: #E5165E"> الام</h2>
+          <div class="bais-info" style="text-align: right;font-size: 26px ;padding: 27px 33px;font-family: 'mada';font-weight: bold;color: #45C3D2">
+            {{mJ}}
+
+          </div>
+
+        
+      </div>
+
+
+    </div>
+
+
+    {{/if}}
+</div>
+</template>
+

@@ -1,0 +1,578 @@
+
+@import url('https://fonts.googleapis.com/css?family=Mada:200,300,400,500,600,700,900&subset=arabic');
+body{
+
+  overflow-x: hidden;
+}
+*{
+  direction: rtl;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+
+min-height:867px;
+
+background-repeat: no-repeat;
+
+background-size: 100%;
+
+display: contents;
+position: center
+
+}
+
+.header img {
+
+}
+
+.money-save label {
+  margin-left: 5px;
+}
+
+
+.header  h2 {
+  color: #fff;
+  display: block;
+  margin-top: 40px;
+  height: 50px;
+  float: right;
+  margin-right: 90px;
+  font-weight: bolder;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+
+  
+}
+
+.header .trapezoid {
+  border-bottom: 572px solid #2894c3;
+  border-left:161px solid transparent;
+  height: 0;
+  width: 1365px;
+  margin-top: 157px
+}
+
+.header .trapezoidImg{
+  border-bottom:700px solid transparent;
+  border-left:260px solid transparent;
+  height: 0;
+  width: 795px;
+  float: left;
+  margin-top: -200px;
+  margin-left: -50px;
+
+
+}
+/*.header .trapezoid2{
+  border-bottom: 66px solid #555;
+  border-left: 20px solid transparent;
+  height: 0;
+  width: 900px;
+  margin-top: 150px
+}*/
+
+.sec h2 {
+  font-family: 'Mada'
+}
+
+.header .slog {
+
+width: 900px;
+height: 80px;
+background-position-y: center;
+background-position-x: center;
+background-image: url(../Background.png);
+color: #E5165E;
+font-size: 51px;
+font-weight: bolder;
+text-align: right;
+padding-right: 52px;
+font-family: 'Mada', serif;
+padding-top:-1px
+}
+
+ #triangle-bottomright { width: 0; height: 0; border-bottom: 80px solid white; border-left: 22px solid transparent; }
+
+.header .line {
+background-color: #DAC343;
+
+width: 289px;
+
+height: 19px;
+
+margin-right:-2px;
+border-radius: 8px;
+
+margin-top: -43px;
+
+z-index: 4;
+
+
+position: absolute;
+}
+
+.ico span {
+  margin-left: 0;
+  margin-right: 15px;
+
+}
+
+
+
+.dark {
+  background-color: rgb(52,58,64,.2) !important
+}
+
+.dark-top{
+    background-color: rgb(52,58,64,.9) !important
+
+}
+.nav-link{
+  color: rgb(255, 255, 255) !important
+
+}
+
+.alm{
+text-decoration: none;
+
+display: inline;
+
+float: right;
+
+height: 33px;
+
+background-color: #2894c3;
+
+width: 200px;
+
+text-align: center;
+
+border-radius: 3px
+
+}
+
+.ico span a {
+ color : #2894c3 !important 
+}
+
+.ico span a p {
+  color: white !important;
+}
+
+.dropdown-toggle::after{
+display: inline-block;
+
+margin-left: .255em;
+
+vertical-align: .255em;
+
+border-top: .3em solid;
+
+border-right: .3em solid transparent;
+
+border-bottom: 0;
+
+border-left: .3em solid transparent;
+
+content: !important
+}
+
+
+.alm :hover {
+  cursor: pointer;
+}
+
+
+.ico{
+ color: white;
+
+
+}
+.ico span {
+  margin-left:  25px;
+  float: left;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.ico span p {
+display: inline-block;
+
+font-size: small;
+
+margin-left: 3px;
+
+margin-bottom: 0px;
+}
+.ico span a {
+  color: #fff;
+
+}
+
+
+ .ico span a  :hover {
+  text-decoration: none  !important ;
+  color: #2894c3 !important;
+  text-decoration-style: none;
+  
+}
+
+.img1{
+height: 470px
+}
+
+.img1 img{
+  border-radius: 5px
+} 
+
+.cont1 {
+height: 400px;
+font-size: 40px;
+font-family: 'Mada';
+font-size: 28px;
+font-weight: bold;
+text-align: right;
+color: #F4A11F;
+padding-top: 170px;
+}
+
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.view {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.view :hover, a:hover {
+  opacity: 0.7;
+}
+.cardvs{
+  margin-right: 90px;
+  margin-top: 100px;
+  text-align: center;
+  height: 286px;
+}
+.card {
+  margin-right: 90px;
+  margin-top: 100px;
+  text-align: center;
+  height: 286px;
+  opacity: 0;
+  overflow: hidden;
+  width: 25%;
+  float: right;
+}
+
+
+.card img {
+  margin-bottom: 16px
+}
+.cont{
+  margin-top: -65px;
+}
+
+.nam {
+  margin-left: 55px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+    .btn-file {
+        position: relative;
+        overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: lef;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* #28a745 */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 7px
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn-group .btn {
+  margin-left: 2px !important;
+border-radius: 7px !important
+}
+
+.btn-group .btn-secondary {
+ background-color: rgb(52,58,64,.9) !important;
+}
+
+.btn-group .btn-secondary:hover {
+background-color: rgb(52,58,64,.6) !important;
+border-color: rgb(52,58,64,.6) !important;
+}
+.btn-group .active {
+  background-color: rgb(52,58,64,.6) !important;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:  #2894c3 !important;
+    border-color:  #2894c3 !important;
+}
+
+.form-group {
+  float: right !important;
+}
+.form-group label {
+  float: right !important;
+}
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.vis {
+  display: contents !important;
+}
+.btn-danger {
+
+    color: #fff;
+    background-color: #b3216b !important;
+    border-color: #b3216b !important;
+  }
+
+  /*profile*/
+
+
+  .sec-info {
+    height: 25%; 
+    border-bottom:2px solid #EEEEEE;
+    text-align: right;
+    font-size: 26px ;
+    padding: 27px 33px;
+    font-family: 'mada';
+    font-weight: bold;
+    color: #45C3D2
+  }
+
+
+.bais-info {
+  background-color: #fff;
+  border: 2px solid #EEEEEE ;
+  box-shadow: 2px 2px 2px #EEE;
+}
+
+
+/*home*/
+
+
+
+.text-home{
+
+  display: none;
+  overflow: hidden;
+}
+
+/*card */
+
+.card-body {
+  padding-top: 0px !important;
+
+}
+
+.card h2{
+  font-size: 130px;
+  font-family: 'Merriweather';
+  font-weight : bold;
+  text-shadow: -1px 2px 1px black;
+}
+
+.card-body .card-text {
+  text-align: right !important;
+}
+
+.card-main {
+  overflow: hidden;
+  height: 280px
+}
+
+
+/*footer*/
+.footer{
+  background-color: rgb(52,58,64,1);
+  height: 550px;
+  margin-top: 60px;
+  padding-top: 75px
+}
+
+.footer .mainsec {
+  height: 100%
+
+}
+
+.footer .foot {
+height: 60px;
+border-top: 1px solid #fff;
+background-color: rgb(52,58,64,1);
+border-left: 1px solid #fff;
+margin-left: 1px;
+border-right: 1px solid #fff;
+margin-right: 1px;
+}
+
+.footer .contact {
+  font-family: 'mada';
+ 
+}
+
+.footer .contact .in{
+display: block;
+width: 85%;
+margin-top: 10px;
+border-radius: 6px;
+padding: 7px 
+}
+
+.footer .infoRaw {
+  opacity: 0
+}
+
+.ver-line {
+  height: 0px;
+}
+.h-line{
+  width: 0px
+}
+
+/*form */
+.dayBox {
+  font-family: 'mada'
+}
+.nextPic {
+  margin-top: 400px
+}
+
+.btnSmall{
+  float: right;
+  padding-right: 22px !important;
+  font-size: 12px !important;
+}
+
+.cont1 span {
+  font-size: 70px
+
+}
+.form{
+  
+}
+
+.nextPic{
+  float: left;
+   position: fixed;
+  left:100px; 
+  display: inline-flex;
+}

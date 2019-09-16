@@ -1,0 +1,119 @@
+<template name="Form">
+  <div class="nextPic js-save">
+    <div style="display: inline;margin-top: 190px;font-size: 40px;text-align: right;color: #007bff">التالي</div>
+    <a href="" type="button"> <span style="font-size: 280px; margin-left: 3px;"> <i class="fa fa-angle-double-left"></i></span> </a>
+  </div>
+<div class="container">
+  {{#if currentUser}}
+
+<div class="form-row">
+<h1 style="float: right;text-align: right;">اهلا بكم الي استمارة القبول في حضانه طيور الجنه </h1>
+</div>
+<form class="form-body" style="width: 71%">
+  <div class="form-row">
+       <div class="form-group col-md-3">
+      <label for="inputState">النوع</label>
+      <select id="gender" class="form-control">
+        <option selected>ذكر</option>
+        <option>انثي</option>
+      </select>
+    </div>
+    <div class="form-group col-md-8">
+      <label for="inputEmail4">اسم الطفل </label>
+      <input type="name" class="form-control" id="name" placeholder="name">
+    </div>
+
+
+
+  </div>
+
+  <div class="form-row">
+     <div class="form-group col-md-10">
+      <label for="inputPassword4">تاريخ الميلاد</label>
+      <input type="date" class="form-control" id="dob"  style="padding-bottom: 32px">
+    </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-md-10">
+    <label for="inputAddress">العنوان</label>
+    <input type="text" class="form-control" id="Address">
+  </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-10">
+      <label for="inputCity">رقم الموبايل </label>
+      <input type="text" class="form-control" id="num">
+    </div>
+  </div>
+  <div class="form-row">
+ 
+    <div class="form-group col-md-10">
+      <label for="inputZip">مؤهل الاب</label>
+      <input type="text" class="form-control" id="fj">
+    </div>
+  </div>
+  <div class="form-row">
+
+    <div class="form-group col-md-6">
+      <label for="inputZip">مؤهل الام</label>
+      <input type="text" class="form-control" id="mj">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+       <div class="input-group-prepend">
+          <label for="inputZip">الحاجات اللي بيخاف منها </label>
+       </div>
+     <textarea class="form-control" aria-label="With textarea" id="fears"></textarea>
+  </div>
+</div> 
+<div class="form-row">
+   <div class="form-group col-md-6">
+      <label for="inputZip">الاكله المفضله</label>
+      <input type="text" class="form-control" id="fav_meal">
+    </div>
+</div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+       <div class="input-group-prepend">
+          <label for="inputZip">اكتر الحاجت اللي بيحبها </label>
+       </div>
+     <textarea class="form-control" aria-label="With textarea" id="love"></textarea>
+  </div>
+</div>
+
+<div class="form-row">
+    <div class="form-group col-md-6" >
+       <div class="input-group-prepend">
+          <label for="inputZip">لو ابنك عنده حاله خاصه اكتبها هنا </label>
+       </div>
+     <textarea class="form-control" aria-label="With textarea" id="priv"></textarea>
+  </div>
+</div>  
+<div class="form-row" >
+
+    <div class="form-group col-md-4">
+      <label for="inputState">هتقدم في اي مرحله عمريه؟</label>
+      <select id="state" class="form-control">
+        <option selected>Bb</option>
+        <option>KG1</option>
+        <option>KG2</option>
+
+      </select>
+    </div>
+    
+</div> 
+
+
+<!--<div class="col-md-3" style="margin-bottom: 50px"> <a href="/image"><button class="btn btn-outline-success btn btn-primary js-search" type="button">next</button></a></div>-->
+
+
+</form>
+{{else}}
+<h1 style="margin-left: 38%; margin-top: 25px: margin-bottom : 15PX">من فضلك سجل دخول اولا </h1>
+ <a class="btn btn-success btn-lg" href="/login" id="login-link" type="button" style="margin-left: 42%"><i class="fa fa-sign-in"></i>تسجيل الدخول </a>
+{{/if}}
+</div>
+</template>
